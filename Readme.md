@@ -1,1 +1,1 @@
-Documents my journey learning OSTEP book by implementing examples it C present in it.
+Documents my journey to learn the C programming language from the C book. Also documents my journey learning OSTEP book by implementing examples present in that book!
