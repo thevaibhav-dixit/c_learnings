@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h> 
 #include <unistd.h>
 
@@ -16,7 +17,7 @@ int main(){
     // Child process 1: Writer
     close(pipefd[0]); // Close unused read end important for avoiding deadlocks EOF errors etc 
     const char *msg = "Hello from child 1\n";
-    write(pipefd[1], msg, sizeof(msg));
+    write(pipefd[1], msg, strlen(msg));
     close(pipefd[1]); // Close write end after writing
     exit(0);
   }
