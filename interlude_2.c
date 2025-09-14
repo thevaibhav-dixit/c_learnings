@@ -4,7 +4,7 @@
 #include <fcntl.h>
 
 int main() {
-  int fd = open("./temp_file_to_write.txt", O_CREAT|O_WRONLY|, S_IRWXU);
+  int fd = open("./temp_file_to_write.txt", O_CREAT|O_WRONLY| S_IRWXU);
 
   if(fd < 0) {
     fprintf(stderr, "open failed\n");
